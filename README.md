@@ -15,10 +15,10 @@
 In order to install packages in emacs, you need to set up the archives links.
 
 Setup the folowing package archives:
-   - org: http://orgmode.org/elpa/
+   - org: https://orgmode.org/org.html#Installation
    - gnu: http://elpa.gnu.org/packages/
-   - melpa-stable: http://stable.melpa.org/packages/
-   - melpa: https://melpa.org/packages/
+   - melpa-stable: https://stable.melpa.org/#/
+   - melpa: https://melpa.org/#/
 
 Before installing a package, make sure to refresh the packages content.
 
@@ -117,6 +117,13 @@ Make sure that autocompletetion is enabled for C language and C headers.
 
 ---
 
+
 ## **Exercise 12 - Package auto installation**
 
 In the `init.el` file, create a list of packages and make sure that all of the packages are installed (if they are not already) when you launch emacs.
+
+## **Exercice 13 (BONUS) - LSP-mode **
+
+**Required packages** lsp-mode
+
+Look what lsp-mode can do, and use it as you need !
