@@ -120,3 +120,8 @@ Make sure that autocompletetion is enabled for C language and C headers.
 ## **Exercise 12 - Package auto installation**
 
 In the `init.el` file, create a list of packages and make sure that all of the packages are installed (if they are not already) when you launch emacs.
+
+## **Exercice 13 (bonus) - setup lsp-mode**
+
+Look up this emacs documentation on how to run debuginfo (compile your program at runtime to display warnings (inside emacs !))
+https://emacs-lsp.github.io/lsp-mode/tutorials/CPP-guide/
