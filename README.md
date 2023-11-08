@@ -125,5 +125,3 @@ In the `init.el` file, create a list of packages and make sure that all of the p
 
 Look up this emacs documentation on how to run debuginfo (compile your program at runtime to display warnings (inside emacs !))
 https://emacs-lsp.github.io/lsp-mode/tutorials/CPP-guide/
-
-After that, if you want to do more, (copilot, etc.) you obviously can ! Make sure you can use it in stumpers tho
