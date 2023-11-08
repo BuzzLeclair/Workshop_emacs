@@ -15,7 +15,7 @@
 In order to install packages in emacs, you need to set up the archives links.
 
 Setup the folowing package archives:
-   - org: http://orgmode.org/elpa/
+   - org: [http://orgmode.org/elpa/](https://orgmode.org/elpa.html)
    - gnu: http://elpa.gnu.org/packages/
    - melpa-stable: http://stable.melpa.org/packages/
    - melpa: https://melpa.org/packages/
