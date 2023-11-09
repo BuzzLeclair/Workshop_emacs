@@ -34,7 +34,7 @@ In the `init.el` file, make sure that the lockfiles and the backup files are dis
 
 In the `~/.emacs.d/` directory, create a new file called `interface.el`.
 
-In order for your configutation to contain the code written in this new file, make sure that it is included in the `init.el` file.
+In order for your configuration to contain the code written in this new file, make sure that it is included in the `init.el` file.
 
 In the `interface.el` file, make sure that the configuration will display the number of lines and columns in your emacs buffer.
 
@@ -88,7 +88,7 @@ In the `programming.el` file, make sure that all the trailing spaces are removed
 
 **Required package:** treemacs
 
-Treemacs is a package that enables to have a tree with some repositories and the foilders/files it contains in your emacs buffer.
+Treemacs is a package that enables to have a tree with some repositories and the folders/files it contains in your emacs buffer.
 
 In the `programming.el` file, make sure that treemacs is launched each time you open a new emacs buffer.
 
