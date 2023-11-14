@@ -2,42 +2,46 @@
 
 ## **Exercise 0 - Setup**
 
-1. Remove the `.emacs` directory at your root if it exists.
-2. Create a `.emacs.d` directory at your root if it doesn't exists.
-3. In the `~/.emacs.d/`, create a `init.el` file. This file will be the entry point of your configuration.
+1. If you have `.emacs` directory at your root, delete it.
+2. Create a `.emacs.d` directory at your root.
+3. In the `~/.emacs.d/`, create a `init.el` file and a `configuration.el` file.
 4. Make sure emacs is not opened in a graphical window but in a terminal (like during exams).
 5. Here are the [emacs shortcuts](https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf) to help you.
+
+`init.el` will be the main file that will be loaded when you open emacs. `configuration.el` will contain all the configuration that you will write.
+
+### In emacs, when you put (function_name) in brackets, it means that you want to call the function like white-space-mode.
 
 ---
 
 ## **Exercise 1 - Packages**
 
-In order to install packages in emacs, you need to set up the archives links.
-
-Setup the folowing package archives:
+In order to be able to install packages in emacs, you need to set up the archives links.</br>
+In the `init.el` file, [Setup](https://www.emacswiki.org/emacs/InstallingPackages) the folowing package archives:
    - org: [http://orgmode.org/elpa/](https://orgmode.org/elpa.html)
    - gnu: http://elpa.gnu.org/packages/
    - melpa-stable: http://stable.melpa.org/packages/
    - melpa: https://melpa.org/packages/
 
-Before installing a package, make sure to refresh the packages content.
-
 ---
 
 ## **Exercise 2 - Lockfiles and backup files**
 
-In the `init.el` file, make sure that the lockfiles and the backup files are disabled.
+If you doesn't know what are lockfiles and backup files, you can read this [documentation](https://www.gnu.org/software/emacs/manual/html_node/emacs/Backup.html). If you doesn't want them to be created : </br>
 
+In the `init.el` file, make sure that:
+   - lockfiles are not created
+   - backup files are not created
 ---
 
-## **Exercise 3 - Lines and columns**
+## **Exercise 3 - Columns**
 
-In the `~/.emacs.d/` directory, create a new file called `interface.el`.
+We will use the `configuration.el` file to write our configuration, but you can also do it in the init.el, it's just a matter of preference.
 
-In order for your configuration to contain the code written in this new file, make sure that it is included in the `init.el` file.
+If you use the `configuration.el` file, make sure that it is [included](https://www.emacswiki.org/emacs/LoadingLispFiles) in the `init.el` file.
 
-In the `interface.el` file, make sure that the configuration will display the number of lines and columns in your emacs buffer.
 
+In the file, make sure that the configuration will display the number of columns in your emacs buffer.
 
 ---
 
@@ -45,31 +49,40 @@ In the `interface.el` file, make sure that the configuration will display the nu
 
 **Required package:** monokai-theme
 
-In the `~/.emacs.d/interface.el` file, enable the monokai theme so it is loaded each time you open emacs.
+In emacs, install the monokai theme package.
+
+In you configuration file, you need to enable the monokai theme so it is loaded each time you open emacs.
 
 ---
 
 ## **Exercise 5 - Mouse click**
 
-**Required package:** xterm-mouse-mode
+There's a function in emacs to enable the mouse click in emacs.
 
-Create a `mouse.el` file (make sure it is included in the `init.el` file).
-
-In the `mouse.el` file, enable the mouse click.
+In the `configuration.el` file, make sure to call that function and check if each time you open emacs, it's enabled.
 
 ---
 
-## **Exercise 6 - Tab characters**
+## **Exercise 6 - Treemacs**
 
-Create a `programming.el` file.
+**Required package:** treemacs
 
-In order to respect the Epitech coding style, make sure that the TAB key indents the text with 4 spaces.
+Treemacs is a package that let you navigate through your files and folders in emacs. Like Visual Studio Code.
+
+In emacs :
+   - install the treemacs package
+   - call the function to enable it in your configuration file.</br></br>
+
+When you open emacs, you should see a new window with a tree of your files and folders.
 
 ---
 
 ## **Exercice 7 - Pairs**
 
 **Required package:** electric-pair-mode
+
+In Emacs, there's a function that enables to automatically add a pair of characters when you add one of them.</br>
+Install the package and enable it in your configuration file.
 
 Ensure that:
 - the `"` character is added to the buffer when you add a `"` character
@@ -80,25 +93,24 @@ Ensure that:
 
 ## **Exercise 8 - Trailing spaces**
 
-In the `programming.el` file, make sure that all the trailing spaces are removed when you save the buffer.
+In the your configuration file, make sure that trailing spaces are deleted when you save your file by calling a function everytime emacs is open.
 
 ---
- 
-## **Exercise 9 - Treemacs**
 
-**Required package:** treemacs
+## **Exercise 9 - Autocompletetion**
 
-Treemacs is a package that enables to have a tree with some repositories and the folders/files it contains in your emacs buffer.
+**Required packages:** company, company-c-headers
 
-In the `programming.el` file, make sure that treemacs is launched each time you open a new emacs buffer.
+Make sure that autocompletetion is enabled for C language and C headers.
 
---- 
+---
 
 ## **Exercise 10 - Shortcuts**
 
 **Required package:** tab-bar-mode
 
-Create a new file called `keyboard-shortcuts.el`.
+Create a new file called `shortcuts.el`.
+You need to call this file in your `init.el`
 
 Ensure that:
    - `Ctrl+n` opens a new tab bar in your emacs buffer
@@ -107,21 +119,11 @@ Ensure that:
    - `Ctrl+A` adds a new repository to treemacs
    - `Ctrl+D` removes a repository to treemacs
 
----
-
-## **Exercise 11 - Autocomplete**
-
-**Required packages:** company, company-c-headers
-
-Make sure that autocompletetion is enabled for C language and C headers.
+You can add more like copy paste shortcut and more !
 
 ---
 
-## **Exercise 12 - Package auto installation**
-
-In the `init.el` file, create a list of packages and make sure that all of the packages are installed (if they are not already) when you launch emacs.
-
-## **Exercice 13 (bonus) - setup lsp-mode**
+## **Exercice 11 (bonus) - setup lsp-mode**
 
 Look up this emacs documentation on how to run debuginfo (compile your program at runtime to display warnings (inside emacs !))
 https://emacs-lsp.github.io/lsp-mode/tutorials/CPP-guide/
