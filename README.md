@@ -26,11 +26,11 @@ In the `init.el` file, [Setup](https://www.emacswiki.org/emacs/InstallingPackage
 
 ## **Exercise 2 - Lockfiles and backup files**
 
-If you doesn't know what are lockfiles and backup files, you can read this [documentation](https://www.gnu.org/software/emacs/manual/html_node/emacs/Backup.html). If you doesn't want them to be created : </br>
+If you do not know what are lockfiles and backup files, you can read this [documentation](https://www.gnu.org/software/emacs/manual/html_node/emacs/Backup.html). If you don't want them to be created : </br>
 
 In the `init.el` file, make sure that:
    - lockfiles are not created
-   - backup files are not created
+   - backup files are not created (be careful, as they are sometimes useful if you remove the wrong file !)
 ---
 
 ## **Exercise 3 - Columns**
@@ -40,17 +40,17 @@ We will use the `configuration.el` file to write our configuration, but you can 
 If you use the `configuration.el` file, make sure that it is [included](https://www.emacswiki.org/emacs/LoadingLispFiles) in the `init.el` file.
 
 
-In the file, make sure that the configuration will display the number of columns in your emacs buffer.
+In the file, make sure that the configuration displays the number of columns in your emacs buffer.
 
 ---
 
 ## **Exercise 4 - Theme**
 
-**Required package:** monokai-theme
+**Required package:** dracula-theme
 
-In emacs, install the monokai theme package.
+In emacs, install the dracula theme package.
 
-In you configuration file, you need to enable the monokai theme so it is loaded each time you open emacs.
+In you configuration file, you need to enable the theme so it is loaded on startup.
 
 ---
 
@@ -72,7 +72,9 @@ In emacs :
    - install the treemacs package
    - call the function to enable it in your configuration file.</br></br>
 
-When you open emacs, you should see a new window with a tree of your files and folders.
+When you open emacs, you should see a new window with a tree of your files and folders. ( Like this !![image](https://github.com/BuzzLeclair/Workshop_emacs/assets/91875583/59b09dd6-cb09-47f2-9414-78d405d29854))
+
+
 
 ---
 
