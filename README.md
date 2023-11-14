@@ -1,6 +1,6 @@
 # **\[Workshop ASTEK\] Emacs configuration**
 
-## **Exercise 0 - Setup**
+## **Setup**
 
 1. If you have `.emacs` directory at your root, delete it.
 2. Create a `.emacs.d` directory at your root.
@@ -13,7 +13,7 @@
 
 ---
 
-## **Exercise 1 - Packages**
+## **Packages**
 
 In order to be able to install packages in emacs, you need to set up the archives links.</br>
 In the `init.el` file, [Setup](https://www.emacswiki.org/emacs/InstallingPackages) the folowing package archives:
@@ -24,7 +24,7 @@ In the `init.el` file, [Setup](https://www.emacswiki.org/emacs/InstallingPackage
 
 ---
 
-## **Exercise 2 - Lockfiles and backup files**
+## **Lockfiles and backup files**
 
 If you do not know what are lockfiles and backup files, you can read this [documentation](https://www.gnu.org/software/emacs/manual/html_node/emacs/Backup.html). If you don't want them to be created : </br>
 
@@ -33,7 +33,7 @@ In the `init.el` file, make sure that:
    - backup files are not created (be careful, as they are sometimes useful if you remove the wrong file !)
 ---
 
-## **Exercise 3 - Columns**
+## **Columns**
 
 We will use the `configuration.el` file to write our configuration, but you can also do it in the init.el, it's just a matter of preference.
 
@@ -44,7 +44,7 @@ In the file, make sure that the configuration displays the number of columns in 
 
 ---
 
-## **Exercise 4 - Theme**
+## **Theme**
 
 **Required package:** dracula-theme
 
@@ -54,7 +54,7 @@ In you configuration file, you need to enable the theme so it is loaded on start
 
 ---
 
-## **Exercise 5 - Mouse click**
+## **Mouse click**
 
 There's a function in emacs to enable the mouse click in emacs.
 
@@ -62,7 +62,7 @@ In the `configuration.el` file, make sure to call that function and check if eac
 
 ---
 
-## **Exercise 6 - Treemacs**
+## **Treemacs**
 
 **Required package:** treemacs
 
@@ -78,7 +78,7 @@ When you open emacs, you should see a new window with a tree of your files and f
 
 ---
 
-## **Exercice 7 - Pairs**
+## **Pairs**
 
 **Required package:** electric-pair-mode
 
@@ -92,13 +92,13 @@ Ensure that:
 
 ---
 
-## **Exercise 8 - Trailing spaces**
+## **Trailing spaces**
 
 In the your configuration file, make sure that trailing spaces are deleted when you save your file by calling a function everytime emacs is open.
 
 ---
 
-## **Exercise 9 - Autocompletetion**
+## **Autocompletetion**
 
 **Required packages:** company, company-c-headers
 
@@ -107,7 +107,7 @@ https://company-mode.github.io/manual/Getting-Started.html
 
 ---
 
-## **Exercise 10 - Shortcuts**
+## **Shortcuts**
 
 **Required package:** tab-bar-mode
 
@@ -125,7 +125,7 @@ You can add more like copy paste shortcut and more !
 
 ---
 
-## **Exercice 11 (bonus) - setup lsp-mode**
+## **(bonus) - setup lsp-mode**
 
 Look up this emacs documentation on how to run debuginfo (compile your program at runtime to display warnings (inside emacs !))
 https://emacs-lsp.github.io/lsp-mode/tutorials/CPP-guide/
