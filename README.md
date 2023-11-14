@@ -5,12 +5,11 @@
 1. If you have `.emacs` directory at your root, delete it.
 2. Create a `.emacs.d` directory at your root.
 3. In the `~/.emacs.d/`, create a `init.el` file and a `configuration.el` file.
-4. Make sure emacs is not opened in a graphical window but in a terminal (like during exams).
-5. Here are the [emacs shortcuts](https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf) to help you.
+4. Make sure emacs is not opened in a graphical window but in a terminal (like during exams, check "no window emacs") 
 
 `init.el` will be the main file that will be loaded when you open emacs. `configuration.el` will contain all the configuration that you will write.
 
-### In emacs, when you put (function_name) in brackets, it means that you want to call the function like white-space-mode.
+### In elisp (the emacs programming language), when you put (function_name) in brackets, it means that you want to call the function (like you would call **white-space-mode**).
 
 ---
 
