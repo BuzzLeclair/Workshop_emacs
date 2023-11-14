@@ -72,7 +72,7 @@ In emacs :
    - install the treemacs package
    - call the function to enable it in your configuration file.</br></br>
 
-When you open emacs, you should see a new window with a tree of your files and folders. ( Like this !![image](https://github.com/BuzzLeclair/Workshop_emacs/assets/91875583/59b09dd6-cb09-47f2-9414-78d405d29854))
+When you open emacs, you should see a new window with a tree of your files and folders. ( Like this !)![image](https://github.com/BuzzLeclair/Workshop_emacs/assets/91875583/59b09dd6-cb09-47f2-9414-78d405d29854)
 
 
 
@@ -102,7 +102,8 @@ In the your configuration file, make sure that trailing spaces are deleted when 
 
 **Required packages:** company, company-c-headers
 
-Make sure that autocompletetion is enabled for C language and C headers.
+https://company-mode.github.io/manual/Getting-Started.html
+
 
 ---
 
